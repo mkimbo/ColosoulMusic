@@ -1,5 +1,5 @@
 ---
-title: 'The Gatsby starter that brings music to the web!'
+title: 'Music is love in search of a word!'
 about_image: './me.jpg'
 techs: ['Artist', 'Producer', 'Sound Engineer']
 ---

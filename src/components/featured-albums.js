@@ -73,7 +73,6 @@ const StyledArchiveContainer = styled.div`
 `;
 
 const FeaturedAlbums = ({ featured }) => {
-  console.log(featured);
   const featuredAlbums = featured.map((project, index) => {
     const coverImage = project.node.frontmatter.cover_image
       ? project.node.frontmatter.cover_image.childImageSharp.fluid

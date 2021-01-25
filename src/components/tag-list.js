@@ -25,7 +25,6 @@ const StyledTagLink = styled(Link)`
 `;
 
 const TagList = ({ artists }) => {
-  console.log(artists);
   return (
     <StyledTagContainer>
       {artists.map((artist) => (
