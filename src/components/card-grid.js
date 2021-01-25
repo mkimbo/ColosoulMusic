@@ -77,10 +77,16 @@ const CardGrid = ({ cards, description, title, id = null, controls }) => {
           />
         ) : (
           <Fragment>
-            {!loading && playing ? (
-              <AiOutlinePauseCircle style={{ cursor: 'pointer' }} onClick={togglePlayPause} />
+            {!loading && !playing ? (
+              <AiOutlinePlayCircle style={{ cursor: 'pointer' }} onClick={togglePlayPause} />
             ) : (
-              <em>loading..</em>
+              <Fragment>
+                {loading ? (
+                  <em>loading..</em>
+                ) : (
+                  <AiOutlinePauseCircle style={{ cursor: 'pointer' }} onClick={togglePlayPause} />
+                )}
+              </Fragment>
             )}
           </Fragment>
         )}
