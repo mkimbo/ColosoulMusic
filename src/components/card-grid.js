@@ -5,6 +5,8 @@ import { AiOutlinePlayCircle } from 'react-icons/ai';
 import { AiOutlinePauseCircle } from 'react-icons/ai';
 import { mq } from './_shared/media';
 import { StyledSection } from './_shared/styled-section';
+import Loader from './loader';
+import { ThreeDots } from 'svg-loaders-react';
 //audio library
 import { useAudioPlayer } from 'react-use-audio-player';
 
@@ -32,7 +34,7 @@ const StyledFeatureCard = styled.article`
   display: flex;
   align-items: center;
   flex-direction: column;
-  min-height: 200px;
+  min-height: 255px;
   padding: 1rem;
 
   & svg {
@@ -42,7 +44,7 @@ const StyledFeatureCard = styled.article`
   }
 `;
 const StyledCardLabel = styled.h2`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 1rem 0;
   color: var(--body-color);
 `;
@@ -53,7 +55,10 @@ const StyledDivider = styled.div`
   margin-bottom: 1rem;
 `;
 const StyledFeatureDescription = styled.p`
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  text-align: center;
 `;
 
 const CardGrid = ({ cards, description, title, id = null, controls }) => {
@@ -82,7 +87,7 @@ const CardGrid = ({ cards, description, title, id = null, controls }) => {
             ) : (
               <Fragment>
                 {loading ? (
-                  <em>loading..</em>
+                  <ThreeDots />
                 ) : (
                   <AiOutlinePauseCircle style={{ cursor: 'pointer' }} onClick={togglePlayPause} />
                 )}

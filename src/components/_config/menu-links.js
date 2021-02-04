@@ -12,7 +12,7 @@ export const indexMenuLinks = [
   {
     name: 'Albums',
     link: '/albums',
-    icon: 'folder-o',
+    icon: 'folder',
   },
   {
     name: 'Store',

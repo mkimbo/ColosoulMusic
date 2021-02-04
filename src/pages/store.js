@@ -10,6 +10,7 @@ import { flexCenter } from '../components/_shared/styled-mixins';
 import { StyledFullHeightSection } from '../components/_shared/styled-section';
 import { StyledSeparator } from '../components/_shared/styled-separator';
 import { StyledPageHeader, StyledH1 } from '../components/_shared/styled-headings';
+import StoreGrid from '../components/store-grid';
 
 const StyledProjectsH1 = styled(StyledPageHeader)`
   margin-top: 2rem;
@@ -58,7 +59,7 @@ const Store = ({ data }) => {
       <StyledFullHeightSection>
         <StyledProjectsH1>Store</StyledProjectsH1>
         <StyledSeparator />
-        <StyledH1>Colosoul Store is Coming Soon!!!</StyledH1>
+        <StoreGrid />
         <StyledPaginationContainer>
           <Pagination
             pageSize={paginationSize}

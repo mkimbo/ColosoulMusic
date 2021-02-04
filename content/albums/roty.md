@@ -1,7 +1,7 @@
 ---
 date: 2021-05-31
 title: 'Rookie Of The Year'
-artists: ['Colosoul', 'Tulia', 'Madi Simba', 'Tunji']
+artists: ['Colosoul', 'Tulia', 'Madi Simba']
 published: true
 featured: true
 soundcloud_link: 'https://soundcloud.com/user-153126640'
@@ -12,13 +12,9 @@ description: 'A strange art – music – the most poetic and precise of all the
 
 # Song List
 
-1. Lazizi
-2. Malaika
-3. Spliff Break
-4. Wrong Guys
-5. ROTY
-6. Funky Song
-7. Song 7
-8. 888
-9. Vici
-10. Conclusion
+1. Sunset Freestyle
+2. Anti Fakes ft Tulia
+3. Spliff Break Interlude
+4. Outro ft Madi Simba
+5. A Lazizi Story ft Tulia
+6. Everyday
