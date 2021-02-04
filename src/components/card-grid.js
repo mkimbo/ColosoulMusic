@@ -5,7 +5,6 @@ import { AiOutlinePlayCircle } from 'react-icons/ai';
 import { AiOutlinePauseCircle } from 'react-icons/ai';
 import { mq } from './_shared/media';
 import { StyledSection } from './_shared/styled-section';
-import Loader from './loader';
 import { ThreeDots } from 'svg-loaders-react';
 //audio library
 import { useAudioPlayer } from 'react-use-audio-player';
