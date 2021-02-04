@@ -5,7 +5,7 @@ artists: ['Colosoul', 'Tulia', 'Madi Simba']
 published: true
 featured: true
 soundcloud_link: 'https://soundcloud.com/user-153126640'
-cover_image: ./images/RotyArt.png
+cover_image: ./images/RotyArt.jpg
 canonical_url: false
 description: 'A strange art – music – the most poetic and precise of all the arts, vague as a dream and precise as algebra'
 ---
