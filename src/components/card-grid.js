@@ -6,6 +6,14 @@ import { AiOutlinePauseCircle } from 'react-icons/ai';
 import { mq } from './_shared/media';
 import { StyledSection } from './_shared/styled-section';
 import { ThreeDots } from 'svg-loaders-react';
+import {
+  WhatsappShareButton,
+  FacebookShareButton,
+  TwitterShareButton,
+  TwitterIcon,
+  FacebookIcon,
+  WhatsappIcon,
+} from 'react-share';
 //audio library
 import { useAudioPlayer } from 'react-use-audio-player';
 
@@ -27,7 +35,7 @@ const StyledFeatureGridContainer = styled.section`
   }
 `;
 const StyledFeatureCard = styled.article`
-  border: 1px solid var(--body-color);
+  border: 2px dotted black;
   border-radius: var(--radius);
 
   display: flex;
@@ -58,6 +66,10 @@ const StyledFeatureDescription = styled.p`
   margin-top: 5px;
   margin-bottom: 0px;
   text-align: center;
+`;
+const StyledShareButtons = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 `;
 
 const CardGrid = ({ cards, description, title, id = null, controls }) => {
@@ -95,6 +107,24 @@ const CardGrid = ({ cards, description, title, id = null, controls }) => {
           </Fragment>
         )}
         <StyledFeatureDescription>{artists}</StyledFeatureDescription>
+        <StyledShareButtons>
+          <FacebookShareButton url={`https://colosoul-music.netlify.app/music`}>
+            <FacebookIcon size={26} color="#fff" round bgStyle={{ fill: 'transparent' }} />
+          </FacebookShareButton>
+          <WhatsappShareButton
+            title={`Listen to ${title} by ${artists}`}
+            url={`https://colosoul-music.netlify.app/music`}
+          >
+            <WhatsappIcon size={26} color="#fff" round bgStyle={{ fill: 'transparent' }} />
+          </WhatsappShareButton>
+          <TwitterShareButton
+            title={`Listen to ${title} by ${artists}`}
+            url={`https://colosoul-music.netlify.app/music`}
+            style={{ backgroundColor: 'transparent' }}
+          >
+            <TwitterIcon size={26} color="#fff" round bgStyle={{ fill: 'transparent' }} />
+          </TwitterShareButton>
+        </StyledShareButtons>
       </StyledFeatureCard>
     );
   });
