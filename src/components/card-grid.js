@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { AiOutlinePlayCircle } from 'react-icons/ai';
 import { AiOutlinePauseCircle } from 'react-icons/ai';
 import { mq } from './_shared/media';
@@ -72,9 +72,14 @@ const StyledShareButtons = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
 `;
 
-const CardGrid = ({ cards, description, title, id = null, controls }) => {
-  const { setCurrentSong, togglePlayPause, currentSong, playing, loading } = controls;
-  const { load } = useAudioPlayer();
+const CardGrid = ({ cards, description, title, id = null }) => {
+  const [currentUrl, setCurrentURL] = useState(null);
+  const [currentSong, setCurrentSong] = useState(null);
+  const { loading, playing, togglePlayPause } = useAudioPlayer({
+    src: currentUrl,
+    format: 'mp3',
+    autoplay: true,
+  });
   const featureCards = cards.map(({ icon, prefix, title, artists, url }, index) => {
     return (
       <StyledFeatureCard key={index}>
@@ -84,11 +89,8 @@ const CardGrid = ({ cards, description, title, id = null, controls }) => {
           <AiOutlinePlayCircle
             style={{ cursor: 'pointer' }}
             onClick={() => {
-              load({
-                src: url,
-                autoplay: true,
-              });
               setCurrentSong(index);
+              setCurrentURL(url);
             }}
           />
         ) : (

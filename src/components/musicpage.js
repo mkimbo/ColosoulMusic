@@ -51,31 +51,14 @@ const Music = ({}) => {
     cards,
     allMarkdownRemark: { nodes },
   } = data;
-  const [currentSong, setCurrentSong] = useState(null);
-  const { ready, loading, error, playing, pause, togglePlayPause } = useAudioPlayer();
-  const controls = {
-    currentSong: currentSong,
-    ready: ready,
-    loading: loading,
-    togglePlayPause: togglePlayPause,
-    playing: playing,
-    error: error,
-    pause: pause,
-    setCurrentSong: setCurrentSong,
-  };
+
   return (
     <Layout menuLinks={indexMenuLinks}>
       <SEO title="Music" />
       <StyledFullHeightSection>
         <StyledProjectsH1>Music</StyledProjectsH1>
         <StyledSeparator />
-        <CardGrid
-          cards={cards.frontmatter.cards}
-          controls={controls}
-          description={cards.html}
-          title="Our Features"
-          id="features"
-        />
+        <CardGrid cards={cards.frontmatter.cards} description={cards.html} title="Our Features" id="features" />
       </StyledFullHeightSection>
     </Layout>
   );
