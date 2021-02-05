@@ -6,7 +6,7 @@ module.exports = {
     image: '/images/logo.png',
     author: 'Colosoul Studio',
     description: 'Colosoul Music Website.',
-    url: 'https://knochenmark.github.io',
+    url: 'https://colosoul-music.netlify.app',
     paginationPageSize: 3, // Amount of albums displayed per listing page.
   },
   plugins: [
