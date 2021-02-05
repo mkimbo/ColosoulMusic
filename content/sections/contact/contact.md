@@ -1,7 +1,7 @@
 ---
 phone: '+254 722836727'
 email: 'colosoulmusic@gmail.com'
-address: 'Nairobi, Kenya'
+address: 'Mombasa, Kenya'
 ---
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr,

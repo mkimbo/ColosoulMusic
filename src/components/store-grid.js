@@ -8,7 +8,7 @@ const StyledTextSection = styled.section`
 `;
 const StyledStoreGridContainer = styled.section`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 0.5rem;
   margin-top: 2.5rem;
   width: 100%;

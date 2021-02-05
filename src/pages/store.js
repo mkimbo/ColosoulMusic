@@ -59,6 +59,7 @@ const Store = ({ data }) => {
       <StyledFullHeightSection>
         <StyledProjectsH1>Store</StyledProjectsH1>
         <StyledSeparator />
+        <p>Colosoul Store is still in development..Coming Soooooooon!!!</p>
         <StoreGrid />
         <StyledPaginationContainer>
           <Pagination

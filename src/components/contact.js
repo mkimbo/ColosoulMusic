@@ -78,7 +78,7 @@ const Contact = ({ data }) => {
           )}
           {email && (
             <StyledContainer>
-              <Icon icon="paper-plane" />
+              <Icon icon="envelope" />
               <StyledFormContainer>
                 <StyledForm>My E-Mail</StyledForm>
                 <span>{email}</span>
