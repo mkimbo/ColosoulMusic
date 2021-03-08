@@ -56,7 +56,8 @@ const Hero = ({ data }) => {
       <video
         autoPlay="autoplay"
         loop="loop"
-        playsinline="true"
+        playsInline="true"
+        playsInline
         disablePictureInPicture="true"
         muted
         className={classes.Video}
