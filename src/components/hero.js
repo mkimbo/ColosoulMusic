@@ -53,15 +53,7 @@ const Hero = ({ data }) => {
   const videoSource = '../assets/background.mp4';
   return (
     <div className={classes.Container}>
-      <video
-        autoPlay="autoplay"
-        loop="loop"
-        playsInline="true"
-        playsInline
-        disablePictureInPicture="true"
-        muted
-        className={classes.Video}
-      >
+      <video autoPlay="autoplay" loop="loop" playsInline disablePictureInPicture muted className={classes.Video}>
         <source src="video/background.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
