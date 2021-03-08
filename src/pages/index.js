@@ -24,7 +24,6 @@ const Index = ({ data }) => {
     <Layout menuLinks={indexMenuLinks}>
       <SEO title="Home" />
       <Hero data={heroData} />
-      <Facts />
       <About data={data.about} />
       <FeaturedAlbums featured={data.featuredAlbums.edges} />
       <Contact data={data.contact} />
